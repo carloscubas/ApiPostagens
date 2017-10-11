@@ -22,10 +22,6 @@ Route::group(['middleware' => ['api'],'prefix' => 'api'], function () {
         Route::post('get_user_details', 'APIController@get_user_details');
     });
 
-    Route::resource('post', 'PostController');
-    Route::resource('user', 'UserController');
-    Route::resource('post', 'PostController');
-    Route::resource('comments', 'ComentsController');
-    Route::resource('transaction', 'TransacaoController');
-    Route::resource('notification', 'NotificacaoController');
+    Route::resource('produtos', 'ProdutoController');
+
 });
